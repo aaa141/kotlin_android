@@ -1,6 +1,5 @@
-package com.example.kotlintest.basic_ch06
+package com.example.kotlintest.basic
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -8,7 +7,7 @@ import android.widget.SeekBar
 import android.widget.TextView
 import com.example.kotlintest.R
 
-class MainActivityB6 : AppCompatActivity() {
+class b6_PomodoroTimer : AppCompatActivity() {
 
     private val remainMinutesTextView: TextView by lazy {
         findViewById<TextView>(R.id.remainMinutesTextView)
@@ -24,7 +23,7 @@ class MainActivityB6 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_b6)
+        setContentView(R.layout.activity_b6_pomodoro_timer)
 
         bindViews()
     }

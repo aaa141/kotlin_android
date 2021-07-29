@@ -1,4 +1,4 @@
-package com.example.kotlintest
+package com.example.kotlintest.basic
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,8 +9,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
+import com.example.kotlintest.R
 
-class MainActivity2 : AppCompatActivity() {
+class b2_LottoPicker : AppCompatActivity() {
 
     private val clearButton: Button by lazy {
         findViewById<Button>(R.id.clearButton)
@@ -43,7 +44,7 @@ class MainActivity2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_b2_lotto_picker)
 
         numberPicker.minValue = 1
         numberPicker.maxValue = 45
@@ -121,11 +122,21 @@ class MainActivity2 : AppCompatActivity() {
     }
     private fun setNumberBackground(number:Int, textView: TextView){
         when(number){
-            in 1..10 ->textView.background = ContextCompat.getDrawable(this, R.drawable.circle_yellow);
-            in 11..20 ->textView.background = ContextCompat.getDrawable(this, R.drawable.circle_blue);
-            in 21..30 ->textView.background = ContextCompat.getDrawable(this, R.drawable.circle_red);
-            in 31..40 ->textView.background = ContextCompat.getDrawable(this, R.drawable.circle_gray);
-            else ->textView.background = ContextCompat.getDrawable(this, R.drawable.cricle_green);
+            in 1..10 ->textView.background = ContextCompat.getDrawable(this,
+                R.drawable.circle_yellow
+            );
+            in 11..20 ->textView.background = ContextCompat.getDrawable(this,
+                R.drawable.circle_blue
+            );
+            in 21..30 ->textView.background = ContextCompat.getDrawable(this,
+                R.drawable.circle_red
+            );
+            in 31..40 ->textView.background = ContextCompat.getDrawable(this,
+                R.drawable.circle_gray
+            );
+            else ->textView.background = ContextCompat.getDrawable(this,
+                R.drawable.cricle_green
+            );
         }
     }
     private fun initClearButton(){

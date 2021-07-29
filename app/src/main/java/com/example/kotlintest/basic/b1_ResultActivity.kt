@@ -1,15 +1,16 @@
-package com.example.kotlintest
+package com.example.kotlintest.basic
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
+import com.example.kotlintest.R
 import kotlin.math.pow
 
-class ResultActivity : AppCompatActivity() {
+class b1_ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_result)
+        setContentView(R.layout.activity_b1_result)
 
         val height = intent.getIntExtra("height", 0);
         val weight = intent.getIntExtra("weight", 0);
