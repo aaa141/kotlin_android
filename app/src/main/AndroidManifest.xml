@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kotlintest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KotlinTest">
+
+        <!-- Chapter1: BMI 계산기 만들기 -->
+        <activity android:name=".MainActivity1"></activity>
+        <activity android:name=".ResultActivity" />
+        <!-- Chapter2: 로또 추첨기 만들기 -->
+        <activity android:name=".MainActivity2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Chapter6: 뽀모도로 타이머 -->
+        <activity android:name=".basic_ch06.MainActivityB6">
+
+        </activity>
+
+
+
+    </application>
+</manifest>
