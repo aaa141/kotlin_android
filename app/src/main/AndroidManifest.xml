@@ -9,26 +9,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinTest">
+        <activity android:name=".intermediate.i5_Tinder"></activity>
         <!-- Chapter1: BMI 계산기 만들기 -->
         <activity android:name=".basic.b1_BMIcalc" />
-        <activity android:name=".basic.b1_ResultActivity" />
-        <!-- Chapter2: 로또 추첨기 만들기 -->
-        <activity android:name=".basic.b2_LottoPicker"></activity>
+        <activity android:name=".basic.b1_ResultActivity" /> <!-- Chapter2: 로또 추첨기 만들기 -->
+        <activity android:name=".basic.b2_LottoPicker">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
         <activity
             android:name=".basic.b3_SecretDiary"
-            android:theme="@style/Theme.KotlinTest.NoActionBar">
+            android:theme="@style/Theme.KotlinTest.NoActionBar"></activity>
+        <activity
+            android:name=".basic.b3_DiaryActivity"
+            android:theme="@style/Theme.KotlinTest.NoActionBar" />
+        <activity android:name=".basic.b4_Calculator">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-        </activity>
-
-        <activity android:name=".basic.b3_DiaryActivity"
-            android:theme="@style/Theme.KotlinTest.NoActionBar"/>
-
-        <!-- Chapter6: 뽀모도로 타이머 -->
+        </activity> <!-- Chapter6: 뽀모도로 타이머 -->
         <activity android:name=".basic.b6_PomodoroTimer" />
     </application>
 
